@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<resources>
+    <!--アプリ名-->
+    <string name="app_name">BNPJ Credit</string>
+
+    <!--Facebook-->
+    <string name="facebook_app_id">632582828154339</string>
+    <string name="fb_login_protocol_scheme">fb632582828154339</string>
+    <string name="facebook_client_token">01e4605ec2b3063ebb6112bc05106220</string>
+    <string name="shared_user_id">nsp.platz.nitv.com</string>
+    <string name="shared_user_label">nsp.platz.nitv.com</string>
+
+    <!--利用規約画面-->
+    <string name="opening_bank_account">銀行口座開設</string>
+    <string name="open_account">上記に同意して口座を開設する</string>
+    <string name="privacy_policy_header">利用規約</string>
+    <string name="privacy_policy_title">
+        <u>利用規約</u>
+    </string>
+
+    <!--登録開始前・ホーム画面-->
+    <string name="home_description_text">顔写真と本人確認書類の撮影だけで\nご本人確認を行っていただけます。</string>
+    <string name="home_agenda_text">ご利用の流れ</string>
+    <string name="one_text">1</string>
+    <string name="two_text">2</string>
+    <string name="three_text">3</string>
+    <string name="selfie_text">顔写真の撮影</string>
+    <string name="liveness_check_text">まばたきチェック</string>
+    <string name="id_capture_text">本人確認書類の撮影</string>
+    <string name="id_capture_kind_text">(表、斜め、裏)</string>
+    <string name="start_register_text">登録をはじめる</string>
+    <string name="id_document_kind">本人確認書類選択</string>
+    <string name="id_driver_license_card">運転免許証</string>
+    <string name="id_myumber_card">マイナンバーカード</string>
+    <string name="id_residence_card">在留カード</string>
+
+    <!--書類撮影のイントロ画面-->
+    <string name="introduction_first_text">本人確認書類は3種類撮影します。</string>
+    <string name="introduction_second_text">指定された位置に本人確認書類を\n合わせてください。</string>
+    <string name="drive_license_front">表面</string>
+    <string name="drive_license_diagonal">斜め</string>
+    <string name="drive_license_diagonal_45">斜め(45度)</string>
+    <string name="drive_license_back">裏面</string>
+    <string name="intorduction_diagonal_notice">※書類の厚みを撮影するために、斜めから撮影します。</string>
+    <string name="start_capture">まずは表面の撮影をする</string>
+
+    <!--チュートリアル画面-->
+    <string name="selfie_tutorial_text">これから顔の撮影を行います。\nスマートフォンを地面と垂直に持ってください。</string>
+    <string name="front_capture_tutorial_text">表面を撮影します。\n書類に対して水平にスマートフォンを向けてください。</string>
+    <string name="back_capture_tutorial_text">本人確認書類を裏返し裏面を撮影します。\n書類に対して水平にスマートフォンを向けてください。</string>
+    <string name="tilted_capture_tutorial_text">斜めから撮影します。\n書類に対して45度スマートフォンを\n傾けて撮影してください。</string>
+
+    <string name="start_capture_text">撮影を始める</string>
+
+    <!--書類撮影画面-->
+    <!--プログレスエリア用の文言-->
+    <string name="document_progress">本人確認書類の撮影</string>
+
+    <!--確認画面用の文言-->
+    <string name="document_confirmation">以下を確認してから次へ進むボタンを押してください。</string>
+    <string name="document_next">次へ進む</string>
+    <string name="document_photo_retake">撮影し直す</string>
+    <string name="document_dialog_title">ERROR</string>
+    <string name="document_hasFaceFound_dialog_message">本人の顔が写っているか確認して下さい</string>
+    <string name="document_hasAcceptableRectangle_dialog_message">本人確認書類が枠内に収まっているか確認して下さい</string>
+    <string name="document_hasAcceptableAngle_dialog_message">本人確認書類を正しい角度（水平または斜め）で撮影されているか確認して下さい</string>
+    <string name="document_button_title">確認する</string>
+
+    <!--申し込み画面-->
+    <string name="start_request">申し込む</string>
+    <string name="request_result_message">お申し込みありがとうございました。\n追ってご登録結果をお知らせ致します。</string>
+    <string name="close_request">閉じる</string>
+    <string name="request_header">お申込内容の確認</string>
+    <string name="request_header_notes">撮影した写真をご確認の上、申し込むボタンを押してください。</string>
+
+
+    <!--撮影中のダイアログ用の文言-->
+    <string name="dialog_title">まだお申し込みは \n完了していません</string>
+    <string name="dialog_text">データを廃棄してトップに戻りますか？</string>
+
+    <string name="dialog_button_return">トップへ戻る</string>
+    <string name="dialog_button_continue">続ける</string>
+
+    <string name="dialog_title_retake">顔検出エラー</string>
+    <string name="dialog_text_retake">顔が検出できなかったため再撮影をお願いいたします。</string>
+
+    <string name="timeout_dialog_title">タイムアウトしました</string>
+
+    <!--SDK String-->
+
+    <!--App側で使用されている-->
+    <!--<string name="start_capture_text">撮影を始める</string>-->
+
+    <!-- faceID 取得用KEY -->
+    <string name="liveness_face_id_key">liveness_face_id_key</string>
+    <string name="doc_front_face_id_key">doc_front_face_id_key</string>
+    <string name="doc_tilted_face_id_key">doc_tilted_face_id_key</string>
+    <string name="default_face_id">default_face_id</string>
+
+    <!--================================本人確認書類の撮影=======================================-->
+    <!--共通-->
+    <!--プログレスエリア用の文言-->
+    <!--<string name="document_progress">本人確認書類の撮影</string>-->
+
+    <!--&lt;!&ndash;確認画面用の文言&ndash;&gt;-->
+    <!--<string name="document_confirmation">以下を確認してから次へ進むボタンを押してください。</string>-->
+    <!--<string name="document_next">次へ進む</string>-->
+    <!--<string name="document_photo_retake">撮影し直す</string>-->
+
+    <!--表-->
+    <string name="document_front_found">枠内に本人確認書類の表面を合わせてください。</string>
+    <string name="document_front_not_found">枠内に本人確認書類の表面を合わせてください。</string>
+    <string name="document_success_front_message">表面の撮影が完了しました</string>
+
+    <!--斜め-->
+    <string name="document_tilted_found">スマートフォンを45度に傾け、\n枠内に本人確認書類を合わせてください。</string>
+    <string name="document_tilted_not_found">スマートフォンを45度に傾け、\n枠内に本人確認書類を合わせてください。</string>
+    <string name="document_success_tilted_message">斜めからの撮影が完了しました</string>
+
+    <!--裏-->
+    <string name="document_back_found">枠内に本人確認書類の裏面を合わせてください。</string>
+    <string name="document_back_not_found">枠内に本人確認書類の裏面を合わせてください。</string>
+    <string name="document_success_back_message">裏面の撮影が完了しました</string>
+
+    <!--================================顔写真の撮影=============================================-->
+    <!--プログレスエリア用の文言-->
+    <string name="selfie_progress">顔写真の撮影</string>
+
+    <!--顔検知用の文言-->
+    <string name="selfie_face_found">そのまま撮影ボタンを押してください。</string>
+    <string name="selfie_face_not_found">端末を垂直にして、上の枠に顔を合わせてください。</string>
+
+    <!--成功画面用の文言-->
+    <string name="selfie_success_message">顔写真の撮影が完了しました。</string>
+
+    <!--確認画面用の文言-->
+    <string name="selfie_confirmation">以下を確認してから次へ進むボタンを押してください。</string>
+    <string name="selfie_next">次へ進む</string>
+    <string name="selfie_photo_retake">撮影し直す</string>
+
+    <!--通信エラーダイアログの文言-->
+    <string name="connection_error_dialog_title">エラー</string>
+    <string name="connection_error_dialog_text">顔写真の撮影に失敗しました。\nもう一度やり直してください。</string>
+    <string name="ok_dialog_text">OK</string>
+
+    <!--登録エラーダイアログの文言-->
+    <string name="enroll_error_dialog_title">顔の認識に失敗しました</string>
+    <string name="enroll_error_dialog_text">下記に該当しないかをご確認ください。\n\n・マスクをしている\n・前髪で目や眉が隠
+        れている\n・撮影場所が暗い\n・ふちの太い眼鏡をかけている</string>
+
+    <!--================================まばたきチェック==========================================-->
+    <!--プログレスエリア用の文言-->
+    <string name="liveness_progress">まばたきチェック</string>
+
+    <!--顔検知用の文言-->
+    <string name="liveness_face_found">まばたきをしてください。検知して自動で撮影します。</string>
+    <string name="liveness_face_not_found">上の枠に顔を合わせてください。</string>
+
+    <!--成功画面用の文言-->
+    <string name="liveness_success_message">まばたきチェックが完了しました。</string>
+    <string name="liveness_next">次へ進む</string>
+
+    <!--撮影中のダイアログ用の文言-->
+    <!--<string name="dialog_title">まだお申し込みは \n完了していません</string>-->
+    <!--<string name="dialog_text">データを廃棄してトップに戻りますか？</string>-->
+
+    <!--<string name="dialog_button_return">トップへ戻る</string>-->
+    <!--<string name="dialog_button_continue">続ける</string>-->
+
+    <!--カメラ権限エラーダイアログの文言-->
+    <string name="camera_permission_error_dialog_title">カメラ権限エラー</string>
+    <string name="camera_permission_error_dialog_text">カメラ権限を許可し、申込手続きを再実施お願い致します。</string>
+
+    <string name="camera_permission_error_dialog_button_ok">OK</string>
+
+    <!--通信エラーダイアログの文言-->
+    <string name="connection_error_liveness_dialog_title">エラー</string>
+    <string name="ok_liveness_dialog_text">OK</string>
+    <string name="connection_error_liveness_dialog_text">まばたきチェックに失敗しました。\nもう一度やり直してください。</string>
+
+    <!--予期せぬエラーダイアログ-->
+    <string name="unexpected_dialog_title">予期せぬエラー</string>
+    <string name="unexpected_dialog_message">予期せぬエラーが発生しました。トップ画面へ遷移し、再登録をお願いいたします。</string>
+
+    <!--================================接続先、ポリシーの設定=============================================-->
+    <!-- URL：RPサーバIFへの繋ぎ先URL https://ドメイン/dobs/ -->
+    <!-- for development-->
+<!--    <string name="server_name">dobs-cityexpress.dev-polaris.com</string>-->
+<!--     for production-->
+    <string name="server_name">dobs-cityexpress.polarify-service.com</string>
+
+    <!-- regポリシー -->
+    <string name="reg_policy">DobsRegistration</string>
+
+    <!-- evaluationポリシー -->
+    <string name="evaluation_policy">EvaluationPolicy</string>
+
+    <!-- 共通エラー情報 -->
+    <string name="common_error_title">エラー</string>
+    <string name="common_ok">OK</string>
+    <string name="common_message">外部からの影響で、アプリの状態が変わったので、申込手続きを再実施お願い致します。</string>
+</resources>

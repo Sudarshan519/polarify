@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tutorial_text_size">12sp</dimen>
+    <dimen name="home_number_font_size">22sp</dimen>
+    <dimen name="request_header_notes_font_size">14sp</dimen>
+    <dimen name="policy_font_size">13dp</dimen>
+
+    <dimen name="button_font_size">11dp</dimen>
+
+    <dimen name="document_indicator_thickness_size">3.5dp</dimen>
+    <dimen name="error_dialog_button_height">40dp</dimen>
+    <dimen name="error_dialog_button_size">18dp</dimen>
+    <dimen name="error_dialog_message_size">16dp</dimen>
+    <dimen name="error_dialog_title_height">50dp</dimen>
+    <dimen name="error_dialog_title_size">24dp</dimen>
+    <dimen name="error_margin">10dp</dimen>
+    <dimen name="header_font_size">20dp</dimen>
+    <dimen name="progress_font_size">10dp</dimen>
+    <dimen name="progress_header_font_size">15dp</dimen>
+    <dimen name="progress_title_height">50dp</dimen>
+    <dimen name="qr_code_msg_font_size">14dp</dimen>
+    <dimen name="swipe_icon_height">30dp</dimen>
+    <dimen name="swipe_icon_margin">5dp</dimen>
+    <dimen name="swipe_icon_width">30dp</dimen>
+    <dimen name="temporary_top_margin">50dp</dimen>
+
+    <dimen name="body_font_size">11dp</dimen>
+
+</resources>

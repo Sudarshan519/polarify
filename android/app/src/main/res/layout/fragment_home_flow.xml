@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+        <!--Polarify画像-->
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/logo_flow" />
+
+        <!---->
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/home_description_text" />
+
+        <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/line_color" />
+
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@+id/header_layout"
+            android:layout_above="@+id/btn_layout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/home_agenda_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <!--１ 本人確認書類の撮影-->
+            <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="22dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/one_text"
+                        android:textColor="@color/number_text_color"
+                        android:textSize="@dimen/home_number_font_size"
+                        android:textStyle="bold" />
+
+                <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginHorizontal="21dp"
+                        android:layout_marginVertical="27.5dp"
+                        android:background="@color/line_color" />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/license" />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="21dp"
+                            android:text="@string/id_capture_text"
+                            android:textColor="@color/home_text_color"
+                            android:textSize="@dimen/body_font_size" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:text="@string/id_capture_kind_text"
+                            android:textColor="@color/home_text_color"
+                            android:textSize="@dimen/body_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--２ 顔写真の撮影-->
+            <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="22dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/two_text"
+                        android:textColor="@color/number_text_color"
+                        android:textSize="@dimen/home_number_font_size"
+                        android:textStyle="bold" />
+
+                <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginVertical="27.5dp"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="19.5dp"
+                        android:background="@color/line_color" />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/aperture" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="21dp"
+                        android:text="@string/selfie_text"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/body_font_size" />
+            </LinearLayout>
+
+            <!--３ まばたきチェック-->
+            <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="22dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/three_text"
+                        android:textColor="@color/number_text_color"
+                        android:textSize="@dimen/home_number_font_size"
+                        android:textStyle="bold" />
+
+                <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginHorizontal="21dp"
+                        android:layout_marginVertical="27.5dp"
+                        android:background="@color/line_color" />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/eye" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17.5dp"
+                        android:text="@string/liveness_check_text"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/body_font_size" />
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/textView_document_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/id_document_kind"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_document_kind">
+
+                <RadioButton
+                        android:id="@+id/radioDriverLicenseCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="8dp"
+                        android:background="@color/white"
+                        android:checked="true"
+                        android:text="@string/id_driver_license_card"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/body_font_size" />
+
+
+                <RadioButton
+                        android:id="@+id/radiomyNumberCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="8dp"
+                        android:background="@color/white"
+                        android:text="@string/id_myumber_card"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/body_font_size" />
+
+
+                <RadioButton
+                        android:id="@+id/radioResidenceCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="8dp"
+                        android:background="@color/white"
+                        android:text="@string/id_residence_card"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/body_font_size" />
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:layout_alignParentBottom="true">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <!--登録を始めるボタン-->
+            <jp.co.polarify.onboarding.sdk.view.SafetyButton
+                    android:id="@+id/start_register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/next_button_design"
+                    android:text="@string/start_register_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_font_size"
+                    android:textStyle="bold" />
+        </FrameLayout>
+
+        <ProgressBar
+                android:id="@+id/waitting_progress_bar_id"
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+    </FrameLayout>
+
+</RelativeLayout>

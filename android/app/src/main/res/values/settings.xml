@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--セルフィ、ライブネス撮影画面のプログレスエリア表示・非表示設定-->
+    <bool name="progress_area_enabled">false</bool>
+
+    <!-- セルフィ撮影画面のタイムアウト値(秒) -->
+    <integer name="selfie_capture_timeout_interval">180</integer>
+
+    <!-- 書類撮影画面のタイムアウト値(秒) -->
+    <integer name="document_capture_timeout_interval">180</integer>
+
+    <!-- ライブネス撮影画面のタイムアウト値(秒) -->
+    <integer name="liveness_capture_timeout_interval">180</integer>
+
+    <!-- 事業者を識別するためのキー -->
+    <string name="enterprise_key">Cn7n3QYRTz</string>
+</resources>

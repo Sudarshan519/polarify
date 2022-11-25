@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <!-- ヘッダータイトル -->
+    <TextView
+            android:textStyle="bold"
+            android:textSize="@dimen/progress_header_font_size"
+            android:text="@string/liveness_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--横線-->
+    <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:id="@+id/progress_line"
+            android:background="@color/lightGrey"
+            app:layout_constraintStart_toStartOf="@+id/first_progress_image"
+            android:layout_marginStart="55dp"
+            app:layout_constraintEnd_toEndOf="@+id/third_progress_image"
+            android:layout_marginEnd="55dp"
+            app:layout_constraintBottom_toBottomOf="@+id/second_progress_image"
+            app:layout_constraintTop_toTopOf="@+id/second_progress_image"/>
+
+    <!--１．プログレス-->
+    <ImageView
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/progress1_inactive"
+            android:id="@+id/first_progress_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/progress_header"/>
+
+    <TextView
+            android:textSize="@dimen/progress_font_size"
+            android:gravity="center_horizontal"
+            android:text="@string/document_progress"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_progress_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/second_progress_image"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!--２．プログレス-->
+    <ImageView
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/progress2_inactive"
+            android:id="@+id/second_progress_image"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/progress_header"
+            app:layout_constraintStart_toEndOf="@+id/third_progress_image"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/first_progress_image"
+            android:layout_marginEnd="8dp"/>
+
+    <TextView
+            android:textSize="@dimen/progress_font_size"
+            android:gravity="center_horizontal"
+            android:text="@string/selfie_progress"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/second_progress_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/third_progress_image"
+            app:layout_constraintStart_toEndOf="@+id/first_progress_text"
+            app:layout_constraintEnd_toStartOf="@+id/third_progress_text"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!--３．プログレス-->
+    <ImageView
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/progress3_active"
+            android:id="@+id/third_progress_image"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/progress_header"/>
+
+    <TextView
+            android:textSize="@dimen/progress_font_size"
+            android:textColor="@color/progress_active_font_color"
+            android:gravity="center_horizontal"
+            android:text="@string/liveness_progress"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/third_progress_text"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/first_progress_image"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

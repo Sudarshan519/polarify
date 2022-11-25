@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <!-- ヘッダータイトル -->
+    <TextView
+            android:id="@+id/request_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_header"
+            android:textStyle="bold"
+            android:textColor="@color/standartd_text_color"
+            android:textSize="@dimen/progress_header_font_size"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"/>
+
+    <TextView
+            android:id="@+id/request_header_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_header_notes"
+            android:textColor="@color/request_header_notes_color"
+            android:textSize="@dimen/request_header_notes_font_size"
+            app:layout_constraintTop_toBottomOf="@+id/request_header"
+            app:layout_constraintStart_toStartOf="@+id/request_header"
+            app:layout_constraintEnd_toEndOf="@+id/request_header"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

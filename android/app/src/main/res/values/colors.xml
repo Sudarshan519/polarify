@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorAuthenticatorButton">#A9D243</color>
+    <color name="colorAuthenticatorButtonPressed">#87a835</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="darkGrey">#555555</color>
+    <color name="lightGrey">#BBBBBB</color>
+    <color name="scan_overlay">#b8404040</color>
+    <color name="translucent">#80000000</color>
+    <color name="translucentWhite">#80FFFFFF</color>
+
+    <color name="openingBankAccountText">#C4C4C4</color>
+    <color name="home_text_color">#888888</color>
+    <color name="standartd_text_color">#333333</color>
+    <color name="number_text_color">#5EBCF4</color>
+    <color name="line_color">#F2F2F2</color>
+    <color name="dotted_line_color">#888888</color>
+    <color name="description_text_color">#555555</color>
+    <color name="gradation_button_dark_color">#0095EB</color>
+    <color name="gradation_button_light_color">#5EBCF4</color>
+    <color name="confirmation_text_color">#333333</color>
+    <color name="introduciton_second_text_color">#27A5EE</color>
+    <color name="request_retake_color">#5EBCF4</color>
+    <color name="oval_background_color">#0095EB</color>
+    <color name="request_button_back_color">#66000000</color>
+    <color name="request_header_notes_color">#EC135A</color>
+
+    <!--プログレスエリア用のフォント色-->
+    <color name="progress_header_font_color">#666666</color>
+    <color name="progress_active_font_color">#FF33B5E5</color>
+    <color name="progress_inactive_font_color">#D3D3D3</color>
+    <color name="progress_horizontal_line_color">#D3D3D3</color>
+    <color name="progress_background_color">#FFFFFF</color>
+
+    <!--撮影中のダイアログフォント色-->
+    <color name="dialog_font_color">#FF33B5E5</color>
+
+    <color name="confirmation_bg_color">#F5F5F5</color>
+</resources>
