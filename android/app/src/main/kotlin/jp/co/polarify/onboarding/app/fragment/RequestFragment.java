@@ -17,10 +17,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import io.reactivex.Observable;
-import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 import androidx.annotation.NonNull;
@@ -30,14 +27,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import retrofit2.Response;
-import jp.co.polarify.onboarding.app.apilogger.LogModel;
-
-import com.example.bnpj_polarify_re.MainActivity;
 import com.example.bnpj_polarify_re.R;
 
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 import jp.co.polarify.onboarding.app.BundleKeyDefinitions;
 import jp.co.polarify.onboarding.app.TutorialActivity;
 import jp.co.polarify.onboarding.app.apilogger.ApiInterface;
@@ -57,15 +48,10 @@ import jp.co.polarify.onboarding.sdk.types.result.VerificationType;
 import jp.co.polarify.onboarding.sdk.view.SafetyButton;
 import kotlin.jvm.internal.Intrinsics;
 import retrofit2.Retrofit;
-import jp.co.polarify.onboarding.app.apilogger.RetrofitUtil;
-import jp.co.polarify.onboarding.app.apilogger.ResponseValue;
 
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.List;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /**
  * 申し込み確認画面を生成フラグメントです.

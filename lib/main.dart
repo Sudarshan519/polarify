@@ -32,6 +32,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   var isNFCAvailable;
+  var data;
   static const _ekycPlatform = MethodChannel('com.nitv.bnpjcredit/ekyc');
   static const _nfcPlatform = MethodChannel('com.nitv.bnpjcredit/nfc');
   void _incrementCounter() {
@@ -65,6 +66,30 @@ class _MyHomePageState extends State<MyHomePage> {
     var nfcResult =
         await _ekycPlatform.invokeMethod("openFrontDocumentScanner", params);
     print(nfcResult);
+    data = nfcResult;
+    setState(() {});
+  }
+
+  ///check if nfc available
+  checkNfc() async {
+    var isnfcAvailable =
+        await _nfcPlatform.invokeMethod("isNFCAvailable") as bool;
+    return isnfcAvailable;
+  }
+
+  ///open nfc reader
+  openNfcReader() async {
+    var documentType = "RESIDENCE_CARD";
+    var isManualEKYC = true;
+    final params = {
+      "document_type": documentType,
+      // "isManualEKYC": isManualEKYC ? '1' : '0',
+      "document_number": "2123123123",
+      "pin1": "1234",
+      "pin2": "1234"
+    };
+    var nfcData =
+        await _nfcPlatform.invokeMethod("openDocumentScanner", params);
   }
 
   @override
@@ -77,13 +102,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'NFC CHECK Result',
-            ),
-            Text(
-              isNFCAvailable.toString(),
-              style: Theme.of(context).textTheme.headline4,
-            ),
+            ElevatedButton(
+                onPressed: () {
+                  openNfcReader();
+                },
+                child: Text("Open RcReader")),
+            // const Text(
+            //   'NFC CHECK Result',
+            // ),
+            Text(data.toString()),
+            // Text(
+            //   isNFCAvailable.toString(),
+            //   style: Theme.of(context).textTheme.headline4,
+            // ),
           ],
         ),
       ),

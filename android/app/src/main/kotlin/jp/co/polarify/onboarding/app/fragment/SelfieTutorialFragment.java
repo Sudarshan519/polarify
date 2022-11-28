@@ -24,7 +24,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
-import com.example.bnpj_polarify_re.MainActivity;
 import com.example.bnpj_polarify_re.R;
 
 import org.json.JSONException;
@@ -43,7 +42,6 @@ import jp.co.polarify.onboarding.sdk.PolarifyKycSdkFactory;
 import jp.co.polarify.onboarding.sdk.log.Logger;
 import jp.co.polarify.onboarding.sdk.log.LoggerFactory;
 import jp.co.polarify.onboarding.sdk.types.callback.AddingDocumentsCallback;
-import jp.co.polarify.onboarding.sdk.types.callback.GetFaceVerificationCallback;
 import jp.co.polarify.onboarding.sdk.types.callback.LivenessCallback;
 import jp.co.polarify.onboarding.sdk.types.callback.SelfieCaptureCallback;
 import jp.co.polarify.onboarding.sdk.types.common.DocumentType;
@@ -53,7 +51,6 @@ import jp.co.polarify.onboarding.sdk.types.paramters.MatchingParameters;
 import jp.co.polarify.onboarding.sdk.types.result.FaceCaptureResult;
 import jp.co.polarify.onboarding.sdk.types.result.GetMatchingIDResult;
 import jp.co.polarify.onboarding.sdk.types.result.LivenessCaptureResult;
-import jp.co.polarify.onboarding.sdk.types.result.VerificationResults;
 import jp.co.polarify.onboarding.sdk.view.SafetyButton;
 import retrofit2.Retrofit;
 

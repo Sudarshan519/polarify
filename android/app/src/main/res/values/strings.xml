@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-    
+
 <resources>
     <!--アプリ名-->
     <string name="app_name">BNPJ Credit</string>
@@ -186,8 +186,8 @@
     <!--================================接続先、ポリシーの設定=============================================-->
     <!-- URL：RPサーバIFへの繋ぎ先URL https://ドメイン/dobs/ -->
     <!-- for development-->
-<!--    <string name="server_name">dobs-cityexpress.dev-polaris.com</string>-->
-<!--     for production-->
+    <!--    <string name="server_name">dobs-cityexpress.dev-polaris.com</string>-->
+    <!--     for production-->
     <string name="server_name">dobs-cityexpress.polarify-service.com</string>
 
     <!-- regポリシー -->

@@ -1,0 +1,18 @@
+/* CSS */
+.button_div {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#button_close {
+    width: 50%;
+    border-style: none;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 20px;
+    background: linear-gradient(#0095EB 0%,#5EBCF4 100%);
+}

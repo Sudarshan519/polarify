@@ -1,120 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
 
     <!-- ヘッダータイトル -->
     <TextView
-            android:textStyle="bold"
-            android:textColor="@color/darkGrey"
-            android:textSize="@dimen/progress_header_font_size"
-            android:text="@string/document_progress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/progress_header"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"/>
+        android:id="@+id/progress_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/document_progress"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/progress_header_font_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/second_progress_image"
+        app:layout_constraintEnd_toStartOf="@+id/third_progress_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <!--横線-->
     <View
-            android:layout_width="0dp"
-            android:layout_height="2dp"
-            android:id="@+id/progress_line"
-            android:background="@color/lightGrey"
-            app:layout_constraintStart_toStartOf="@+id/first_progress_image"
-            android:layout_marginStart="55dp"
-            app:layout_constraintEnd_toEndOf="@+id/third_progress_image"
-            android:layout_marginEnd="55dp"
-            app:layout_constraintBottom_toBottomOf="@+id/second_progress_image"
-            app:layout_constraintTop_toTopOf="@+id/second_progress_image"/>
+        android:id="@+id/progress_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="49dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintBottom_toTopOf="@+id/first_progress_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--１．プログレス-->
     <ImageView
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/progress1_active"
-            android:id="@+id/first_progress_image"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/progress_header"/>
+        android:id="@+id/first_progress_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/second_progress_image"
+        app:layout_constraintEnd_toStartOf="@+id/second_progress_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/second_progress_image"
+        app:srcCompat="@drawable/progress1_active" />
 
     <TextView
-            android:textSize="@dimen/progress_font_size"
-            android:textColor="@color/progress_active_font_color"
-            android:gravity="center_horizontal"
-            android:text="@string/document_progress"
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/first_progress_text"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/second_progress_image"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+        android:id="@+id/first_progress_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/document_progress"
+        android:textColor="@color/progress_active_font_color"
+        android:textSize="@dimen/progress_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/second_progress_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_line" />
 
     <!--２．プログレス-->
+
     <ImageView
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/progress2_inactive"
-            android:id="@+id/second_progress_image"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/progress_header"
-            app:layout_constraintStart_toEndOf="@+id/third_progress_image"
-            android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/first_progress_image"
-            android:layout_marginEnd="8dp"/>
+        android:id="@+id/second_progress_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/second_progress_text"
+        app:layout_constraintEnd_toStartOf="@+id/third_progress_image"
+        app:layout_constraintStart_toEndOf="@+id/first_progress_image"
+        app:layout_constraintTop_toBottomOf="@+id/progress_header"
+        app:srcCompat="@drawable/progress2_inactive" />
 
     <TextView
-            android:textSize="@dimen/progress_font_size"
-            android:textColor="@color/lightGrey"
-            android:gravity="center_horizontal"
-            android:text="@string/selfie_progress"
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/second_progress_text"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/third_progress_image"
-            app:layout_constraintStart_toEndOf="@+id/first_progress_text"
-            app:layout_constraintEnd_toStartOf="@+id/third_progress_text"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+        android:id="@+id/second_progress_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:gravity="center_horizontal"
+        android:text="@string/selfie_progress"
+        android:textColor="@color/lightGrey"
+        android:textSize="@dimen/progress_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/third_progress_text"
+        app:layout_constraintStart_toEndOf="@+id/first_progress_text"
+        app:layout_constraintTop_toBottomOf="@+id/second_progress_image" />
 
     <!--３．プログレス-->
     <ImageView
-            android:layout_width="127dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/progress3_inactive"
-            android:id="@+id/third_progress_image"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/progress_header"/>
+        android:id="@+id/third_progress_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/third_progress_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/second_progress_image"
+        app:layout_constraintTop_toBottomOf="@+id/progress_header"
+        app:srcCompat="@drawable/progress3_inactive" />
 
     <TextView
-            android:textSize="@dimen/progress_font_size"
-            android:textColor="@color/lightGrey"
-            android:gravity="center_horizontal"
-            android:text="@string/liveness_progress"
-            android:layout_width="127dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/third_progress_text"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/first_progress_image"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+        android:id="@+id/third_progress_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:gravity="center_horizontal"
+        android:text="@string/liveness_progress"
+        android:textColor="@color/lightGrey"
+        android:textSize="@dimen/progress_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/second_progress_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
