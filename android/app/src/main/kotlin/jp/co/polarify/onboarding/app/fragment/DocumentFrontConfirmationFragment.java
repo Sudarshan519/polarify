@@ -12,6 +12,8 @@ import static jp.co.polarify.onboarding.app.BundleKeyDefinitions.APP_KEY_DIRECT_
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.bnpj_polarify_re.MainActivity;
+
 
 /**
  * 書類表の撮影の確認を行うフラグメントです.

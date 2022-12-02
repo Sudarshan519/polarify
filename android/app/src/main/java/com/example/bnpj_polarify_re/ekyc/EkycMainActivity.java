@@ -16,7 +16,7 @@ public class EkycMainActivity extends AppCompatActivity implements Serializable 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ekyc_main);
+        setContentView(R.layout.activity_main);
 
          
     }

@@ -24,6 +24,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
+import com.example.bnpj_polarify_re.MainActivity;
 import com.example.bnpj_polarify_re.R;
 
 import org.json.JSONException;

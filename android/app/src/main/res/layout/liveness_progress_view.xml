@@ -37,7 +37,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--１．プログレス-->
-
     <ImageView
         android:id="@+id/first_progress_image"
         android:layout_width="0dp"

@@ -27,6 +27,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.bnpj_polarify_re.MainActivity;
 import com.example.bnpj_polarify_re.R;
 
 import jp.co.polarify.onboarding.app.BundleKeyDefinitions;

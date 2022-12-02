@@ -186,9 +186,9 @@
     <!--================================接続先、ポリシーの設定=============================================-->
     <!-- URL：RPサーバIFへの繋ぎ先URL https://ドメイン/dobs/ -->
     <!-- for development-->
-    <!--    <string name="server_name">dobs-cityexpress.dev-polaris.com</string>-->
+    <string name="server_name">dobs-cityexpress.dev-polaris.com</string>
     <!--     for production-->
-    <string name="server_name">dobs-cityexpress.polarify-service.com</string>
+    <!-- <string name="server_name">dobs-cityexpress.polarify-service.com</string> -->
 
     <!-- regポリシー -->
     <string name="reg_policy">DobsRegistration</string>
